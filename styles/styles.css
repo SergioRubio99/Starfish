@@ -19,22 +19,22 @@
   justify-content: space-between;
   z-index: 2;
   width: 100%;
-  height: 60px;
+  height: 90px;
   margin-right: auto;
   margin-left: auto;
-  background-color: rgb(41, 41, 41);
   /* background:url(./jquerypattern.png); */
   background-repeat: repeat;
-  opacity: 0.6;
   /* display: none; */
   /* width: 90%; */
   top: 0px;
+  background-color: rgb(0, 0, 0, 0);
 }
 
 .header__logo {
-  width: 45px;
+  width: 55px;
   border: 1px solid blue;
   margin-left: 10%;
+  cursor: pointer;
 }
 
 img {
@@ -42,15 +42,36 @@ img {
 }
 
 .header__menu {
-  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
   height: 42px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  margin-right: 10%;
+  font-family: "Poppins", sans-serif;
+}
+
+.header__menu_a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #b9dcff;
+  letter-spacing: 0.09cm;
+  cursor: pointer;
+  transition-duration: 300ms;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.header__menu_a:hover {
+  color: white;
 }
 
 /* BANNER AND SHOWCASE */
 
 .banner {
-  height: 100vh;
+  height: 120%;
   /* margin-top: -50px; */
   z-index: -1;
 }
@@ -70,11 +91,10 @@ video {
 
 .overlay {
   position: absolute;
-  top: 60px;
   background-color: rgb(0, 0, 0);
   width: 100%;
-  height: 90vh;
-  z-index: 1;
+  height: 100vh;
+  z-index: 0;
   opacity: 0.6;
 }
 
@@ -84,7 +104,6 @@ video {
   left: 200px; */
   width: 100%;
   height: 100vh;
-  z-index: 2;
 }
 
 .showcase > h2 {
@@ -98,7 +117,7 @@ video {
   font-size: 20px;
   margin-left: 10%;
   color: rgb(255, 255, 255);
-  margin-bottom:60px;
+  margin-bottom: 60px;
 }
 
 .showcase > a {
@@ -114,18 +133,28 @@ video {
   font-weight: 700;
 }
 
+.banner__btn {
+  transition-duration: 200ms;
+}
+
+.banner__btn:hover {
+  box-shadow: -6px 6px #b9dcff;
+  color: #b9dcff;
+}
+
 /* ARTICLES AND ASIDE */
+
 .content {
   display: flex;
   justify-content: space-around;
-  background-color:#dfefff;
-
+  background-color: #dfefff;
+  z-index: 2;
 }
 
 .articles {
   border: 1px solid orange;
   width: 65%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .aside {
